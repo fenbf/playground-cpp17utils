@@ -22,6 +22,10 @@ The source code is on [GitHub](https://github.com/TechDotIO/cpp-template), pleas
 
 @[optional simple sample]({"stubs": ["cpp_optional.cpp"],"command": "sh ./run.sh cpp_optional.cpp"})
 
+# searchers
+
+@[searchers simple sample]({"stubs": ["cpp_searchers.cpp"],"command": "sh ./run.sh cpp_searchers.cpp"})
+
 # Template Resources
 
 [`markdowns/welcome.md`](https://github.com/TechDotIO/cpp-template/blob/master/markdowns/welcome.md)
