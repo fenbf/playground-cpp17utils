@@ -5,11 +5,22 @@ This C++ template lets you get started quickly with a simple working example usi
 
 The source code is on [GitHub](https://github.com/TechDotIO/cpp-template), please feel free to come up with proposals to improve it.
 
-# Hands-on Demo
+# Any
 
 @[any simple sample]({"stubs": ["cpp_any.cpp"],"command": "sh ./run.sh cpp_any.cpp"})
 
-Check out the markdown file [`welcome.md`](https://github.com/TechDotIO/cpp-template/blob/master/markdowns/welcome.md) to see how this exercise is injected into the template.
+
+# String View
+
+@[string view simple sample]({"stubs": ["cpp_string_view.cpp"],"command": "sh ./run.sh cpp_string_view.cpp"})
+
+# Variant
+
+@[variantsimple sample]({"stubs": ["cpp_variant.cpp"],"command": "sh ./run.sh cpp_variant.cpp"})
+
+# optional
+
+@[optional simple sample]({"stubs": ["cpp_optional.cpp"],"command": "sh ./run.sh cpp_optional.cpp"})
 
 # Template Resources
 
