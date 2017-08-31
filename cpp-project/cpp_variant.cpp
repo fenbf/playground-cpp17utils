@@ -1,50 +1,35 @@
 #include <string>
 #include <iostream>
-#include <any>
-#include <map>
+#include <variant>
+
+struct SampleVisitor
+{
+    void operator()(const int &i) const { std::cout << "int: " << i << "\n"; }
+    void operator()(const float& f) const { std::cout << "float: " << f << "\n"; }
+};
  
 int main()
 {
-    auto a = std::any(12);
+    std::variant<int, float> intOrFloat = 10;
+    static_assert(std::variant_size_v<decltype(intOrFloat)> == 2);
     
-    // set any value:
-    a = std::string("Hello!");
-    a = 16;
-    // reading a value:
+    // won't compile:
+    // error: no match for 'operator=' (operand types are 'std::variant<int, float>' and 'std::__cxx11::basic_string<char>')
+    // intOrFloat = std::string("hello");
     
-    // we can read it as int
-    std::cout << std::any_cast<int>(a) << '\n'; 
- 
-    // but not as string:
-    try 
-    {
-        std::cout << std::any_cast<std::string>(a) << '\n';
-    }
-    catch(const std::bad_any_cast& e) 
-    {
-        std::cout << e.what() << '\n';
-    }
-    
-    // reset and check if it contains any value:
-    a.reset();
-    if (!a.has_value())
-    {
-        std::cout << "a is empty!" << "\n";
-    }
-    
-    // you can use it in a container:
-    std::map<std::string, std::any> m;
-    m["integer"] = 10;
-    m["string"] = std::string("Hello World");
-    m["float"] = 1.0f;
-    
-    for (auto &[key, val] : m)
-    {
-        if (val.type() == typeid(int))
-            std::cout << "int: " << std::any_cast<int>(val) << "\n";
-        else if (val.type() == typeid(std::string))
-            std::cout << "string: " << std::any_cast<std::string>(val) << "\n";
-        else if (val.type() == typeid(float))
-            std::cout << "float: " << std::any_cast<float>(val) << "\n";
-    }
+    // index will show the currently used 'type'
+    std::cout << "index = " << intOrFloat.index() << std::endl;
+    intOrFloat = 100.0f;
+    std::cout << "index = " << intOrFloat.index() << std::endl;
+
+    // try with get_if:
+    if (const auto intPtr (std::get_if<int>(&intOrFloat)); intPtr) 
+        std::cout << "int!" << *intPtr << "\n";
+    else if (const auto floatPtr (std::get_if<float>(&intOrFloat)); floatPtr) 
+        std::cout << "float!" << *floatPtr << "\n";
+
+    // visit:
+    std::visit(SampleVisitor(), intOrFloat);
+    intOrFloat = 10;
+    std::visit(SampleVisitor(), intOrFloat);
 }
