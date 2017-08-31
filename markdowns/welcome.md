@@ -7,24 +7,24 @@ The source code is on [GitHub](https://github.com/TechDotIO/cpp-template), pleas
 
 # Any
 
-@[any simple sample]({"stubs": ["cpp_any.cpp"],"command": "sh ./run.sh cpp_any.cpp"})
+@[std::any sample]({"stubs": ["cpp_any.cpp"],"command": "sh ./run.sh cpp_any.cpp"})
 
 
 # String View
 
-@[string view simple sample]({"stubs": ["cpp_string_view.cpp"],"command": "sh ./run.sh cpp_string_view.cpp"})
+@[std::string_view sample]({"stubs": ["cpp_string_view.cpp"],"command": "sh ./run.sh cpp_string_view.cpp"})
 
 # Variant
 
-@[variantsimple sample]({"stubs": ["cpp_variant.cpp"],"command": "sh ./run.sh cpp_variant.cpp"})
+@[std::variant sample]({"stubs": ["cpp_variant.cpp"],"command": "sh ./run.sh cpp_variant.cpp"})
 
 # optional
 
-@[optional simple sample]({"stubs": ["cpp_optional.cpp"],"command": "sh ./run.sh cpp_optional.cpp"})
+@[std::optional sample]({"stubs": ["cpp_optional.cpp"],"command": "sh ./run.sh cpp_optional.cpp"})
 
 # searchers
 
-@[searchers simple sample]({"stubs": ["cpp_searchers.cpp"],"command": "sh ./run.sh cpp_searchers.cpp"})
+@[searchers sample]({"stubs": ["cpp_searchers.cpp"],"command": "sh ./run.sh cpp_searchers.cpp"})
 
 # Template Resources
 

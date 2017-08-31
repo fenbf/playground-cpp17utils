@@ -10,8 +10,11 @@ struct SampleVisitor
  
 int main()
 {
-    std::variant<int, float> intOrFloat = 10;
+    std::variant<int, float> intOrFloat;
     static_assert(std::variant_size_v<decltype(intOrFloat)> == 2);
+    
+    // default initialized to the first alternative, should be 0
+    std::visit(SampleVisitor(), intOrFloat);
     
     // won't compile:
     // error: no match for 'operator=' (operand types are 'std::variant<int, float>' and 'std::__cxx11::basic_string<char>')
