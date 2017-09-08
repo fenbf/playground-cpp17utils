@@ -6,6 +6,13 @@ Contents:
 
 * [Documents And Links](#doc)
 * [Library Fundamentals V1 TS and more](#libfun)
+* [`std::any`](#any)
+* [`std::variant`](#var)
+* [`std::optional`](#opt)
+* [`std::string_view`](#str)
+* [Searchers](#search)
+* [Other changes](#other)
+* [Summary](#sum)
 
 Let's have a look at the following features:
 
@@ -21,6 +28,7 @@ This playground is adapted from my blog: [Bartek's coding blog: C++17 in details
 Visit the blog if you're looking for more good stuff about C++ :)
 
 <a name="doc" />
+
 # Documents & Links
 
 First of all, if you want to dig into the standard on your own, you can read the latest draft here: 
@@ -47,6 +55,7 @@ And the books:
 OK, let's discuss the utils!
 
 <a name="libfun" />
+
 # Library Fundamentals V1 TS and more
 
 Most of the utilities described today (`std::optional`,`std::any`, `std::string_view`, searchers) comes from so called "Library Fundamentals V1". It was in Technical Specification for some time, and with the paper ["P0220R1 - Adopt Library Fundamentals V1 TS Components for C++17 (R1")](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0220r1.html) it got merged into the standard.
@@ -62,6 +71,7 @@ When I describe the features, I write "compiler" support, but when discussing li
 And now the features:
 
 <a name="any" />
+
 # `std::any`
 
 A better way to handle any type and replace `void*`.
@@ -114,6 +124,7 @@ More info in:
 MSVC VS 2017, GCC: 7.0, Clang: 4.0
 
 <a name="var" />
+
 # `std::variant`
 
 Type safe unions!
@@ -153,6 +164,7 @@ More info:
 MSVC VS 2017, GCC: 7.0, Clang: 4.0?
 
 <a name="opt" />
+
 # `std::optional`
 
 Another and elegant way to return objects from functions that are allowed to be empty.
@@ -188,6 +200,7 @@ More info:
 MSVC VS 2017, GCC: 7.0, Clang: 4.0?
 
 <a name="str" />
+
 # `string_view`
 
 Although passing strings got much faster with move semantics from C++11, there's still a lot of possibilities to end up with many temporary copies.
@@ -219,6 +232,7 @@ More info:
 MSVC VS 2017, GCC: 7.0, Clang: 4.0?
 
 <a name="search" />
+
 # Searchers
 
 When you want to find one object in a `string`, you can just use find or some other alternative. But the task complicates when there's a need to search for a pattern (or a sub range) in a string. 
@@ -252,6 +266,7 @@ More info:
 MSVC VS 2017.3, GCC: 7.0, Clang: 3.9?
 
 <a name="other" />
+
 # Other Changes
 
 * `shared_ptr` with array - [P0414R2: Merging shared_ptr changes from Library Fundamentals to C++17](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0414r2.html). So far `unique_ptr` was able to handle arrays. Now it's also possible to use `shared_ptr`.
@@ -262,6 +277,7 @@ MSVC VS 2017.3, GCC: 7.0, Clang: 3.9?
 * Elementary string conversions - [P0067R5](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0067r5.html), new function [`to_chars`](http://en.cppreference.com/w/cpp/utility/to_chars) that handles basic conversions, no need to use stringstream, sscanf, itoa or other stuff.
 
 <a name="sum" />
+
 # Summary
 
 Did I miss something? Yes!
