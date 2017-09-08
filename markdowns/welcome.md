@@ -23,7 +23,7 @@ First of all, if you want to dig into the standard on your own, you can read the
 
 Also, you can grab **my list of concise descriptions of all of the C++17** - It's a one-page reference card, pdf language features: 
 
-[**grab it here**](http://eepurl.com/cyycFz). 
+[Grab it here: **C++17 Reference Card**](http://eepurl.com/cyycFz)
 
 Links:
 
