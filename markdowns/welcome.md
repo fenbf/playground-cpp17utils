@@ -1,8 +1,6 @@
 [![C++17 features, stl utils](https://4.bp.blogspot.com/-UQbatL9MY-o/WHIoAlhYl6I/AAAAAAAACz4/GKYFLeObkm4E2my_lswjcb5mKv7ZppppQCPcB/s1600/cpp17.png)](http://www.bfilipek.com/2017/09/cpp17-details-utils.html)
 
-What I like about C++17 is that it finally brings a lot of features and patterns that are well known but come from other libraries. For example, for years programmers have been using boost libraries. Now, many of boost sub -libraries are merged into the standard. That merging process makes the transition to the modern C++ much easier, as most of the time the code will just compile and work as expected. Not to mention is the fact that soon you won't need any third party libraries.
-
-Contents:
+Table Of Contents:
 
 * [Documents And Links](#doc)
 * [Library Fundamentals V1 TS and more](#libfun)
@@ -13,6 +11,8 @@ Contents:
 * [Searchers](#search)
 * [Other changes](#other)
 * [Summary](#sum)
+
+What I like about C++17 is that it finally brings a lot of features and patterns that are well known but come from other libraries. For example, for years programmers have been using boost libraries. Now, many of boost sub -libraries are merged into the standard. That merging process makes the transition to the modern C++ much easier, as most of the time the code will just compile and work as expected. Not to mention is the fact that soon you won't need any third party libraries.
 
 Let's have a look at the following features:
 
