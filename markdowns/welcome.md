@@ -12,6 +12,7 @@ Let's have a look at the following features:
 * Plus a few other mentions
 
 This playground is adapted from my blog: [Bartek's coding blog: C++17 in details: Standard Library Utilities](http://www.bfilipek.com/2017/09/cpp17-details-utils.html).
+
 Visit the blog if you're looking for more good stuff about C++ :)
 
 # Documents & Links
@@ -21,6 +22,7 @@ First of all, if you want to dig into the standard on your own, you can read the
 [N4659, 2017-03-21, **Draft, Standard for Programming Language C++**](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/n4659.pdf) - from [isocpp.org](https://isocpp.org/).
 
 Also, you can grab **my list of concise descriptions of all of the C++17** - It's a one-page reference card, pdf language features: 
+
 [**grab it here**](http://eepurl.com/cyycFz). 
 
 Links:
@@ -33,8 +35,8 @@ Links:
 
 And the books:
 
-* [**C++17 STL Cookbook** by Jacek Galowicz](http://amzn.to/2w3K0Fp)
-* [**Modern C++ Programming Cookbook** by Marius Bancila](http://amzn.to/2vFUUQM)
+* [**C++17 STL Cookbook** by Jacek Galowicz](http://amzn.to/2f8wnLp)
+* [**Modern C++ Programming Cookbook** by Marius Bancila](http://amzn.to/2eRaiUu)
 
 OK, let's discuss the utils!
 
