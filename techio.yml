@@ -2,28 +2,8 @@ title: Standard Library Utilities in C++
 
 # Table of content
 plan:
-  - title: Introduction # Set the page title
+  - title: C++17 STL Utilities # Set the page title
     statement: markdowns/welcome.md # Set the file path to the page content
-  - title: Documents & Links
-    statement: markdowns/docsAndLinks.md
-  - title: Library Fundamentals V1 TS & more
-    statement: markdowns/docsAndLinks.md
-  - title: Documents & Links
-    statement: markdowns/utils.md
-  - title: std::any
-    statement: markdowns/stdAny.md
-  - title: std::variant
-    statement: markdowns/stdVariant.md
-  - title: std::optional
-    statement: markdowns/stdOptional.md
-  - title: std::string_view
-    statement: markdowns/stdStringView.md
-  - title: Searchers
-    statement: markdowns/searchers.md
-  - title: Other changes
-    statement: markdowns/otherChanges.md
-  - title: Summary
-    statement: markdowns/summary.md
 
 # Settings for your programming projects and the associated Docker images
 projects:
