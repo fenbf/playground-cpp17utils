@@ -1,10 +1,5 @@
 [![C++17 features, stl utils](https://4.bp.blogspot.com/-UQbatL9MY-o/WHIoAlhYl6I/AAAAAAAACz4/GKYFLeObkm4E2my_lswjcb5mKv7ZppppQCPcB/s1600/cpp17.png)](http://www.bfilipek.com/2017/09/cpp17-details-utils.html)
 
-The new C++ standard brings many useful additions to the Standard Library. So far we've discussed bigger features like the filesystem or parallel algorithms. Today, I want to focus on smaller, but also handy things.
-
-For example, there are utils for handling type safe unions, replacement of `void*`, string searchers and much more.
-
-# 
 What I like about C++17 is that it finally brings a lot of features and patterns that are well known but come from other libraries. For example, for years programmers have been using boost libraries. Now, many of boost sub -libraries are merged into the standard. That merging process makes the transition to the modern C++ much easier, as most of the time the code will just compile and work as expected. Not to mention is the fact that soon you won't need any third party libraries.
 
 Let's have a look at the following features:
@@ -16,13 +11,17 @@ Let's have a look at the following features:
 * Searchers for `std::search`
 * Plus a few other mentions
 
+This playground is adapted from my blog: [Bartek's coding blog: C++17 in details: Standard Library Utilities](http://www.bfilipek.com/2017/09/cpp17-details-utils.html).
+Visit the blog if you're looking for more good stuff about C++ :)
+
 # Documents & Links
 
 First of all, if you want to dig into the standard on your own, you can read the latest draft here: 
 
 [N4659, 2017-03-21, **Draft, Standard for Programming Language C++**](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/n4659.pdf) - from [isocpp.org](https://isocpp.org/).
 
-Also, you can grab my list of concise descriptions of all of the C++17 - It's a one-page reference card, pdf language features: [**grab it here**](http://eepurl.com/cyycFz). 
+Also, you can grab **my list of concise descriptions of all of the C++17** - It's a one-page reference card, pdf language features: 
+[**grab it here**](http://eepurl.com/cyycFz). 
 
 Links:
 
