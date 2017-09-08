@@ -213,7 +213,7 @@ When you want to find one object in a `string`, you can just use find or some ot
 
 The naive approach might be `O(n*m)` (where `n` is the length of the whole string, `m` is the length of the pattern).
 
-But there are much better alternatives. For example Bayer-Moore with the complexity of `O(n+m)`.
+But there are much better alternatives. For example Boyer-Moore with the complexity of `O(n+m)`.
 
 C++17 updated `std::search` algorithm in two ways:
 
