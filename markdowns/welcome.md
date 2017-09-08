@@ -27,7 +27,7 @@ This playground is adapted from my blog: [Bartek's coding blog: C++17 in details
 
 Visit the blog if you're looking for more good stuff about C++ :)
 
-<a name="doc" />
+<a name="doc" ></a>
 
 # Documents & Links
 
@@ -54,7 +54,7 @@ And the books:
 
 OK, let's discuss the utils!
 
-<a name="libfun" />
+<a name="libfun" ></a>
 
 # Library Fundamentals V1 TS and more
 
@@ -70,7 +70,7 @@ When I describe the features, I write "compiler" support, but when discussing li
 
 And now the features:
 
-<a name="any" />
+<a name="any" ></a>
 
 # `std::any`
 
@@ -123,7 +123,7 @@ More info in:
 
 MSVC VS 2017, GCC: 7.0, Clang: 4.0
 
-<a name="var" />
+<a name="var" ></a>
 
 # `std::variant`
 
@@ -163,7 +163,7 @@ More info:
 
 MSVC VS 2017, GCC: 7.0, Clang: 4.0?
 
-<a name="opt" />
+<a name="opt" ></a>
 
 # `std::optional`
 
@@ -199,7 +199,7 @@ More info:
 
 MSVC VS 2017, GCC: 7.0, Clang: 4.0?
 
-<a name="str" />
+<a name="str" ></a>
 
 # `string_view`
 
@@ -231,7 +231,7 @@ More info:
 
 MSVC VS 2017, GCC: 7.0, Clang: 4.0?
 
-<a name="search" />
+<a name="search" ></a>
 
 # Searchers
 
@@ -265,7 +265,7 @@ More info:
 
 MSVC VS 2017.3, GCC: 7.0, Clang: 3.9?
 
-<a name="other" />
+<a name="other" ></a>
 
 # Other Changes
 
@@ -276,7 +276,7 @@ MSVC VS 2017.3, GCC: 7.0, Clang: 3.9?
 * Sampling - [n4562: Sampling](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4562.html#alg.random.sample) - new algorithm that selects `n` elements from the sequence
 * Elementary string conversions - [P0067R5](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0067r5.html), new function [`to_chars`](http://en.cppreference.com/w/cpp/utility/to_chars) that handles basic conversions, no need to use stringstream, sscanf, itoa or other stuff.
 
-<a name="sum" />
+<a name="sum" ></a>
 
 # Summary
 
